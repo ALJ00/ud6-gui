@@ -22,9 +22,9 @@ public class VentanaPrincipal {
                 Verificar verificador = new Verificar(user,password);
 
                 if(verificador.comprobador()){
-                    JOptionPane.showMessageDialog(VentanaPrincipal,"USUARIO Y CONTRASEÑA CORRECTAS");
+                    JOptionPane.showMessageDialog(VentanaPrincipal,"USUARIO Y CONTRASEÑA CORRECTOS");
                 }else{
-                    JOptionPane.showMessageDialog(VentanaPrincipal,"ERROR");
+                    JOptionPane.showMessageDialog(VentanaPrincipal,"CONTRASEÑA INCORRECTA");
                 }
 
                 textoUsuario.setText("");
