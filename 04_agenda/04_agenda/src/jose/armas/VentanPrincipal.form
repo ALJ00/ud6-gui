@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="jose.armas.VentanPrincipal">
+  <grid id="27dc6" binding="ventanaAgenda" layout-manager="BorderLayout" hgap="10" vgap="10">
+    <constraints>
+      <xy x="20" y="20" width="587" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none" title-position="1">
+      <font size="18"/>
+    </border>
+    <children>
+      <component id="d8d07" class="javax.swing.JButton" binding="nuevoContacto">
+        <constraints border-constraint="West"/>
+        <properties>
+          <text value="Nuevo contacto"/>
+        </properties>
+      </component>
+      <component id="e51d8" class="javax.swing.JButton" binding="verContactos">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <text value="Ver contactos"/>
+        </properties>
+      </component>
+      <component id="342ae" class="javax.swing.JButton" binding="buscarContacto">
+        <constraints border-constraint="East"/>
+        <properties>
+          <text value="Buscar contacto"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
