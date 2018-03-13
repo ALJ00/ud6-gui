@@ -29,7 +29,7 @@ public class VentanaNuevoContacto {
 
         JFrame frame = new JFrame("NuevoContacto");
         frame.setContentPane(VentanaNuevoContacto);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
@@ -51,7 +51,7 @@ public class VentanaNuevoContacto {
                     JOptionPane.showMessageDialog(VentanaNuevoContacto, "Error, contacto ya existente");
                 } else {
                     ventanPrincipal.getPersonasVentanaPrincipal().add(nuevaPersona);
-                    //personas.add(nuevaPersona);
+                    ventanPrincipal.getPersonaMap().put(telephone,nuevaPersona);
                     JOptionPane.showMessageDialog(VentanaNuevoContacto, "Contacto guardado correctamente");
                 }
 

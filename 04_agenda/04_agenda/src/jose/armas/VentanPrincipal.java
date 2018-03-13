@@ -19,11 +19,13 @@ public class VentanPrincipal {
     //Conexión.
     private VentanaNuevoContacto ventanaNuevoContacto;
     private VentanaContactos ventanaContactos;
+    private VentanaBuscarContacto ventanaBuscarContacto;
 
     private VentanPrincipal ventanPrincipal;
 
     //Control de las personas.
     private List<Persona>personasVentanaPrincipal = new ArrayList<>();
+    private Map<String,Persona>personaMap = new HashMap<>();
 
     public VentanPrincipal() {
 
@@ -51,6 +53,12 @@ public class VentanPrincipal {
 
             }
         });
+        buscarContacto.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                VentanaBuscarContacto ventanaBuscarContacto = new VentanaBuscarContacto(ventanPrincipal);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -66,5 +74,7 @@ public class VentanPrincipal {
         return personasVentanaPrincipal;
     }
 
-
+    public Map<String, Persona> getPersonaMap() {
+        return personaMap;
+    }
 }

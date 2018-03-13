@@ -88,7 +88,7 @@ public class VentanaContactos {
         textField2.setText(phone);
         textField3.setText(mail);
 
-        
+
         contador.setText((i+1)+" contacto de "+numero);
 
     }

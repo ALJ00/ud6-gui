@@ -11,6 +11,8 @@ public class Persona {
     //Conexión.
     private VentanPrincipal ventanPrincipal;
 
+    public Persona() {
+    }
 
     public Persona(String nombre, String telefono, String email) {
         this.nombre = nombre;
